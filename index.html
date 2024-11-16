@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVent Booking Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Image -->
+    <div class="background">
+        <header>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#image-gallery">About</a>
+                <a href="#booking-form">Contact</a>
+            </div>
+        </header>
+    </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Different Dances in India</h1>
+            <img src="https://images.venuebookingz.com/18533-1703154707-wm-v-legacy-3.jpg"
+                height="500" width="800">
+            <h3>Celebrate movement, culture, and passion through the power of dance</h3> <h4>Experience comfort amindst luxury</h4>
+                <p>The Dance Extravaganza in Tirupati on 28th November 2024 promises an unforgettable experience! Featuring a wide variety of dance forms from classical to contemporary, the event showcases the rich cultural diversity of dance traditions. Whether you're passionate about classical Indian dance, folk dances, or modern performances, this event has something for everyone. Don’t miss the chance to witness stunning performances by talented dancers in an energetic and vibrant atmosphere. Tickets are selling fast, so book your tickets eagerly to secure your spot for this exciting cultural celebration. Join us for an evening of rhythm, grace, and energy!</p>
+        </section>
+        <h5>Contact Form</h5>
+        <section id="booking-form">
+             <h2>Book Your Tickets for Events</h2>
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <button type="submit" id="submit">Submit Booking</button>
+            </form>
+            <div id="formMessage" style="display:none; color: green; margin-top: 10px;">Booking Confirmed!</div>
+        </section>
+         
+        
+        <section id="image-gallery">
+            <h2>Our Events</h2>
+                <div class="gallery">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT49JYVjAyPss3N_drrLu2mvev97yVZN-uoLg&s"
+                        alt="Classic Dance" class="gallery-item">
+                    <img src="https://blogbox.indianeagle.com/wp-content/uploads/2014/04/kathak-dance-indian-classical-dance-forms.jpg" alt="Kathak"
+                        class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9j81AtcWCjWi2veCZqfURt7JixuWODYrgA&s"alt="Tribal" class="gallery-item">
+                    <img src="https://blog.podiumpro.in/wp-content/uploads/2021/11/Screenshot_2021-11-09-20-58-04-87.jpg" alt="Classic and Floak" class="gallery-item">
+                </div>
+       
+            
+            <button onclick="addImage()">Add Image</button>
+        </section>
+        
+        <!-- To-Do List Section -->
+        <section id="todo-list">
+            <h2>To-Do List</h2>
+            <div class="todo-container">
+                <input type="text" id="todoInput" placeholder="Enter a new task" class="todo-input">
+                <button onclick="addTask()" class="todo-btn">Add Task</button>
+
+                <ul id="taskList" class="task-list">
+                    <!-- Tasks will appear here -->
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cultural Events. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
